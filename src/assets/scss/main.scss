@@ -1,0 +1,14 @@
+@import 'reset';
+@import 'variables';
+// @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: $bg-color;
+    // height: 100vh;
+}
+
+h1 {
+    font-size: 36px;
+    color: $white;
+}

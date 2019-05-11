@@ -1,29 +1,43 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+<div>
     <router-view/>
-  </div>
+    <div class="custom-footer">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item">
+                            Home
+                        </a>
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                    </div>
+                    <div class="navbar-end">
+                        <p class="navbar-item">2016, Copyright by Terato Tech</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+.custom-footer {
+    background-color: $sky-blue;
+    .navbar {
+        padding: 0 1%;
+        background-color: $sky-blue;
+        height: 4.8rem;
+        .navbar-item {
+            font-size: 16px;
+            font-weight: bold;
+            color: $white;
+        }
     }
-  }
 }
 </style>
